@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-LaTeX" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/08/25/LaTeX/" class="article-date">
+  <time class="dt-published" datetime="2024-08-25T03:35:14.814Z" itemprop="datePublished">2024-08-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/08/25/LaTeX/">LaTeX</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="LaTeX-笔记"><a href="#LaTeX-笔记" class="headerlink" title="$\LaTeX{}$ 笔记"></a>$\LaTeX{}$ 笔记</h1><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[a4paper, 12pt]&#123;article&#125; </span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125; A sentence of text. </span><br><span class="line"></span><br><span class="line"><span class="keyword">\title</span>&#123;my title&#125;</span><br><span class="line"><span class="keyword">\author</span>&#123;my name&#125;</span><br><span class="line"><span class="keyword">\date</span>&#123;<span class="keyword">\today</span>&#125; <span class="comment">%基本文档元素</span></span><br><span class="line"><span class="comment">% also</span></span><br><span class="line"><span class="keyword">\date</span>&#123;November 2013&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>\documentclass</code> 命令必须出现在每个 LaTeX 文档的开头。花括号内的文本指定了文档的类型。<strong>article</strong> 文档类型适合较短的文章，比如期刊文章和短篇报告。其他文档类型包括 <strong>report</strong>（适用于更长的多章节的文档，比如博士生论文），<strong>proc</strong>（会议论文集），<strong>book</strong> 和 <strong>beamer</strong>。方括号内的文本指定了一些选项——示例中它设置纸张大小为 A4，主要文字大小为 12pt。</p>
+<p>本质：导入<code>.cls</code> 文件</p>
+<p><code>\begin&#123;document&#125;</code> 和 <code>\end&#123;document&#125;</code> 命令将你的文本内容包裹起来。任何在 <code>\begin&#123;documnet&#125;</code> 之前的文本都被视为前导命令，会影响整个文档。任何在 <code>\end&#123;document&#125;</code> 之后的文本都会被忽视。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\maketitle</span> <span class="comment">% 放置标题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\section</span>&#123;title&#125; <span class="comment">%节</span></span><br><span class="line"><span class="keyword">\subsection</span>&#123;&#125; </span><br><span class="line"><span class="keyword">\subsubsection</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\paragraph</span>&#123;&#125; <span class="comment">%4级</span></span><br><span class="line"><span class="keyword">\subparagraph</span>&#123;&#125; <span class="comment">%5级</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="标签-引用"><a href="#标签-引用" class="headerlink" title="标签 &#x2F; 引用"></a>标签 &#x2F; 引用</h2><p>ref, pageref</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\subsection</span>&#123;Stage 1&#125; </span><br><span class="line"><span class="keyword">\label</span>&#123;sec1&#125; The first part of the methods.</span><br><span class="line"></span><br><span class="line">Referring to section <span class="keyword">\ref</span>&#123;sec1&#125; on page <span class="keyword">\pageref</span>&#123;sec1&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">% 自动的引用</span></span><br><span class="line"><span class="keyword">\usepackage</span>&#123;cleveref&#125;</span><br><span class="line"><span class="keyword">\cref</span>&#123;sec1&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="页码"><a href="#页码" class="headerlink" title="页码"></a>页码</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\pagenumbering</span>&#123;roman&#125; (i, ii, iii)</span><br><span class="line"><span class="keyword">\pagenumbering</span>&#123;arabic&#125; (1, 2, 3)</span><br></pre></td></tr></table></figure>
+
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\tableofcontents</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="换页"><a href="#换页" class="headerlink" title="换页"></a>换页</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\newpage</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>[UTF8]&#123;ctex&#125; <span class="comment">% deprecated</span></span><br></pre></td></tr></table></figure>
+<h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\footnote</span>&#123;脚注内容&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="字体效果"><a href="#字体效果" class="headerlink" title="字体效果"></a>字体效果</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\textit</span>&#123;斜体&#125;</span><br><span class="line"><span class="keyword">\emph</span>&#123;Italic&#125;</span><br><span class="line"><span class="keyword">\textbf</span>&#123;粗体&#125;</span><br><span class="line"><span class="keyword">\underline</span>&#123;下划线&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">% 全部：</span></span><br><span class="line"><span class="keyword">\textit</span>&#123;words in italics&#125; </span><br><span class="line"><span class="keyword">\textsl</span>&#123;words slanted&#125; </span><br><span class="line"><span class="keyword">\textsc</span>&#123;words in smallcaps&#125; </span><br><span class="line"><span class="keyword">\textbf</span>&#123;words in bold&#125; </span><br><span class="line"><span class="keyword">\texttt</span>&#123;words in teletype&#125; </span><br><span class="line"><span class="keyword">\textsf</span>&#123;sans serif words&#125; </span><br><span class="line"><span class="keyword">\textrm</span>&#123;roman words&#125; </span><br><span class="line"><span class="keyword">\underline</span>&#123;underlined words&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\verb</span>|<span class="string">minipage</span>|</span><br><span class="line"></span><br><span class="line"><span class="comment">% 切换：</span></span><br><span class="line"><span class="keyword">\rmfamily</span> Roman Family &#123;<span class="keyword">\sffamily</span> Sans Serif Family&#125; &#123;<span class="keyword">\ttfamily</span> Typewriter Family&#125; <span class="comment">% 一直生效</span></span><br><span class="line"></span><br><span class="line">&#123;<span class="keyword">\songti</span> 宋体&#125; &#123;<span class="keyword">\heiti</span> 黑体&#125; &#123;<span class="keyword">\fangsong</span> 仿宋&#125; &#123;<span class="keyword">\kaishu</span> 楷书&#125;</span><br><span class="line"><span class="keyword">\zihao</span>&#123;4&#125; 你好！</span><br></pre></td></tr></table></figure>
+
+<h2 id="彩色"><a href="#彩色" class="headerlink" title="彩色"></a>彩色</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;color&#125;</span><br><span class="line">&#123;<span class="keyword">\color</span>&#123;color&#125;text&#125;</span><br><span class="line"><span class="keyword">\colorbox</span>&#123;color&#125;&#123;text&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="大小"><a href="#大小" class="headerlink" title="大小"></a>大小</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">normal size words </span><br><span class="line">&#123;<span class="keyword">\tiny</span> tiny words&#125; </span><br><span class="line">&#123;<span class="keyword">\scriptsize</span> scriptsize words&#125; &#123;<span class="keyword">\footnotesize</span> footnotesize words&#125;</span><br><span class="line">&#123;<span class="keyword">\small</span> small words&#125;</span><br><span class="line">&#123;<span class="keyword">\large</span> large words&#125;</span><br><span class="line">&#123;<span class="keyword">\Large</span> Large words&#125;</span><br><span class="line">&#123;<span class="keyword">\LARGE</span> LARGE words&#125;</span><br><span class="line">&#123;<span class="keyword">\huge</span> huge words&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\noindent</span></span><br><span class="line"></span><br><span class="line"><span class="comment">% 全顶格</span></span><br><span class="line"><span class="keyword">\setlength</span>&#123;<span class="keyword">\parindent</span>&#125;&#123;0pt&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">% 换行：双斜杠</span></span><br><span class="line"><span class="comment">% 两斜杠换行之后相当于手动换行符，下一行没有首行缩进</span></span><br><span class="line"><span class="keyword">\\</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;enumerate&#125; <span class="comment">% 有序</span></span><br><span class="line">	<span class="keyword">\item</span>[-] 1</span><br><span class="line">	<span class="keyword">\item</span>[+] 2</span><br><span class="line">		<span class="keyword">\begin</span>&#123;itemize&#125; <span class="comment">% 无序</span></span><br><span class="line">			<span class="keyword">\item</span> a</span><br><span class="line">			<span class="keyword">\item</span> b</span><br><span class="line">		<span class="keyword">\end</span>&#123;itemize&#125;</span><br><span class="line">		</span><br><span class="line">	<span class="keyword">\item</span> 3</span><br><span class="line"><span class="keyword">\end</span>&#123;enumerate&#125;</span><br></pre></td></tr></table></figure>
+<p>可以使用方括号参数来修改无序列表头的标志。例如，<code>\item[-]</code> 会使用一个杠作为标志，你甚至可以使用一个单词，比如 <code>\item[One]</code>。<br>![[assets&#x2F;Pasted image 20240726154036.png]]</p>
+<h2 id="空白"><a href="#空白" class="headerlink" title="空白"></a>空白</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\vspace</span>&#123;12pt&#125; <span class="params">#</span> vertical 竖</span><br><span class="line"><span class="keyword">\hspace</span>&#123;2em&#125; <span class="params">#</span> horizonal 横</span><br><span class="line"><span class="keyword">\quad</span> <span class="comment">% 空格</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\#</span> <span class="keyword">\$</span> <span class="keyword">\%</span> <span class="keyword">\^</span>&#123;&#125; <span class="keyword">\&amp;</span> <span class="keyword">\_</span> <span class="keyword">\&#123;</span> <span class="keyword">\&#125;</span> <span class="keyword">\~</span>&#123;&#125;</span><br><span class="line"><span class="keyword">\textbackslash</span> <span class="comment">% \</span></span><br></pre></td></tr></table></figure>
+<p>注意在使用 <strong><code>^</code> 和 <code>~</code> 字符的时侯需要在后面紧跟一对闭合的花括号</strong>，否则他们就会被解释为字母的上标，就像 <code>\^ e</code> 会变成 $\hat e$  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" title="\mathrm {\hat{e}}">。</p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TODO</span><br></pre></td></tr></table></figure>
+
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;figure&#125;[!h]</span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\includegraphics</span>[width=.6<span class="keyword">\textwidth</span>]&#123;smokeblk&#125;</span><br><span class="line">    <span class="keyword">\caption</span>&#123;电路图&#125;</span><br><span class="line">    <span class="keyword">\label</span>&#123;fig:circuit-diagram&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">% 更好：用float包控制是否浮动</span></span><br><span class="line"><span class="keyword">\usepackage</span>&#123;float&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;figure&#125;[htbp] </span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\includegraphics</span>[width=1<span class="keyword">\textwidth</span>]&#123;myimage&#125; </span><br><span class="line">	<span class="keyword">\caption</span>&#123;Here is my image&#125; </span><br><span class="line">	<span class="keyword">\label</span>&#123;image-myimage&#125; </span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>h</code>（here）：尽可能在当前位置放置浮动体。</li>
+<li><code>t</code>（top）：尽可能在页面顶部放置浮动体。</li>
+<li><code>b</code>（bottom）：尽可能在页面底部放置浮动体。</li>
+<li><code>p</code>（page）：将浮动体放在一个或多个专门的浮动体页面上。</li>
+</ul>
+<p>\label 一定要在\caption后面设置，如果有caption</p>
+<p>\label 和 \ref 一一对应，可以方便引用上面的label</p>
+<h2 id="多图排版"><a href="#多图排版" class="headerlink" title="多图排版"></a>多图排版</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;figure&#125;[H]</span><br><span class="line">	<span class="keyword">\caption</span>&#123;...&#125;</span><br><span class="line">	<span class="keyword">\label</span>&#123;...&#125; <span class="comment">% 放在caption的后面</span></span><br><span class="line">	<span class="keyword">\subfigure</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">\begin</span>&#123;minipage&#125;[b]&#123;.3<span class="keyword">\linewidth</span>&#125;</span><br><span class="line">			<span class="keyword">\includegraphics</span>[scale=...]&#123;...&#125;</span><br><span class="line">		<span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line">	&#125; <span class="keyword">\quad</span> <span class="keyword">\quad</span> ...<span class="comment">% n个</span></span><br><span class="line">	<span class="keyword">\subfigure</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">\begin</span>&#123;minipage&#125;[b]&#123;.3<span class="keyword">\linewidth</span>&#125;</span><br><span class="line">			<span class="keyword">\includegraphics</span>[scale=...]&#123;...&#125;</span><br><span class="line">		<span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">% 空行</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">\subfigure</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">\begin</span>&#123;minipage&#125;[b]&#123;.3<span class="keyword">\linewidth</span>&#125;</span><br><span class="line">			<span class="keyword">\includegraphics</span>[scale=...]&#123;...&#125;</span><br><span class="line">		<span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line">	&#125; <span class="keyword">\quad</span> ...<span class="comment">% n个</span></span><br><span class="line">	<span class="keyword">\subfigure</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">\begin</span>&#123;minipage&#125;[b]&#123;.3<span class="keyword">\linewidth</span>&#125;</span><br><span class="line">			<span class="keyword">\includegraphics</span>[scale=...]&#123;...&#125;</span><br><span class="line">		<span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">% 子图注释</span></span><br><span class="line"><span class="keyword">\usepackage</span>&#123;subcaption&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;figure&#125;</span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\begin</span>&#123;minipage&#125;[c]&#123;0.3<span class="keyword">\textwidth</span>&#125;</span><br><span class="line">        <span class="keyword">\centering</span></span><br><span class="line">        <span class="keyword">\includegraphics</span>[width=0.95<span class="keyword">\textwidth</span>]&#123;f1&#125;</span><br><span class="line">        <span class="keyword">\subcaption</span>&#123;流程图&#125;</span><br><span class="line">        <span class="keyword">\label</span>&#123;fig:sample-figure-a&#125;</span><br><span class="line">    <span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line">    <span class="keyword">\begin</span>&#123;minipage&#125;[c]&#123;0.3<span class="keyword">\textwidth</span>&#125;</span><br><span class="line">        <span class="keyword">\centering</span></span><br><span class="line">        <span class="keyword">\includegraphics</span>[width=0.95<span class="keyword">\textwidth</span>]&#123;f1&#125;</span><br><span class="line">        <span class="keyword">\subcaption</span>&#123;流程图&#125;</span><br><span class="line">        <span class="keyword">\label</span>&#123;fig:sample-figure-b&#125;</span><br><span class="line">    <span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line">    <span class="keyword">\begin</span>&#123;minipage&#125;[c]&#123;0.3<span class="keyword">\textwidth</span>&#125;</span><br><span class="line">        <span class="keyword">\centering</span></span><br><span class="line">        <span class="keyword">\includegraphics</span>[width=0.95<span class="keyword">\textwidth</span>]&#123;f1&#125;</span><br><span class="line">        <span class="keyword">\subcaption</span>&#123;流程图&#125;</span><br><span class="line">        <span class="keyword">\label</span>&#123;fig:sample-figure-c&#125;</span><br><span class="line">    <span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line">    <span class="keyword">\caption</span>&#123;多图并排示例&#125;</span><br><span class="line">    <span class="keyword">\label</span>&#123;fig:sample-figure&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">% 等高</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;figure&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">\begin</span>&#123;minipage&#125;[c]&#123;0.48<span class="keyword">\textwidth</span>&#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">\centering</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">\includegraphics</span>[height=0.2<span class="keyword">\textheight</span>]&#123;cat&#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">\subcaption</span>&#123;一只猫&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">\begin</span>&#123;minipage&#125;[c]&#123;0.48<span class="keyword">\textwidth</span>&#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">\centering</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">\includegraphics</span>[height=0.2<span class="keyword">\textheight</span>]&#123;smokeblk&#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">\subcaption</span>&#123;电路图&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">\caption</span>&#123;多图并排示例&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="图文并排"><a href="#图文并排" class="headerlink" title="图文并排"></a>图文并排</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;minipage&#125;[b]&#123;0.65<span class="keyword">\linewidth</span>&#125;</span><br><span class="line">some text</span><br><span class="line"><span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line"><span class="keyword">\hfill</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;minipage&#125;[b]&#123;0.35<span class="keyword">\linewidth</span>&#125;</span><br><span class="line"><span class="keyword">\includegraphics</span>[height=8<span class="keyword">\baselineskip</span>]&#123;grafics&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="三线表"><a href="#三线表" class="headerlink" title="三线表"></a>三线表</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;booktabs&#125;</span><br><span class="line"><span class="keyword">\begin</span>&#123;table&#125;[!htbp]</span><br><span class="line">    <span class="keyword">\caption</span>&#123;标准三线表格&#125;<span class="keyword">\label</span>&#123;tab:001&#125; <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\begin</span>&#123;tabular&#125;&#123;ccccc&#125;</span><br><span class="line">        <span class="keyword">\toprule</span>[1.5pt]</span><br><span class="line">        <span class="built_in">$</span>D<span class="built_in">$</span>(in) <span class="built_in">&amp;</span> <span class="built_in">$</span>P<span class="built_in">_</span>u<span class="built_in">$</span>(lbs) <span class="built_in">&amp;</span> <span class="built_in">$</span>u<span class="built_in">_</span>u<span class="built_in">$</span>(in) <span class="built_in">&amp;</span> <span class="built_in">$</span><span class="keyword">\beta</span><span class="built_in">$</span> <span class="built_in">&amp;</span> <span class="built_in">$</span>G<span class="built_in">_</span>f<span class="built_in">$</span>(psi.in)<span class="keyword">\\</span></span><br><span class="line">        <span class="keyword">\midrule</span>[1pt]</span><br><span class="line">        5 <span class="built_in">&amp;</span> 269.8 <span class="built_in">&amp;</span> 0.000674 <span class="built_in">&amp;</span> 1.79 <span class="built_in">&amp;</span> 0.04089<span class="keyword">\\</span></span><br><span class="line">        10 <span class="built_in">&amp;</span> 421.0 <span class="built_in">&amp;</span> 0.001035 <span class="built_in">&amp;</span> 3.59 <span class="built_in">&amp;</span> 0.04089<span class="keyword">\\</span></span><br><span class="line">        20 <span class="built_in">&amp;</span> 640.2 <span class="built_in">&amp;</span> 0.001565 <span class="built_in">&amp;</span> 7.18 <span class="built_in">&amp;</span> 0.04089<span class="keyword">\\</span></span><br><span class="line">        <span class="keyword">\bottomrule</span>[1.5pt]</span><br><span class="line">    <span class="keyword">\end</span>&#123;tabular&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;table&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">% 合并单元格的三线表 \hline</span></span><br><span class="line"> <span class="keyword">\subsection</span>&#123;Merge cell&#125;</span><br><span class="line"> </span><br><span class="line"> <span class="keyword">\begin</span>&#123;table&#125;[!ht]</span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\label</span>&#123;clusterrrrr&#125;</span><br><span class="line">    <span class="keyword">\caption</span>&#123;k++ and dbscan result&#125; </span><br><span class="line">    <span class="comment">% \rowcolors&#123;2&#125;&#123;mygray&#125;&#123;white!0&#125;</span></span><br><span class="line">    <span class="keyword">\begin</span>&#123;tabular&#125;&#123;cccc|cccc&#125;</span><br><span class="line">    <span class="keyword">\toprule</span>[2pt]</span><br><span class="line">    <span class="keyword">\multicolumn</span>&#123;4&#125;&#123;c|&#125;&#123;K++&#125; <span class="built_in">&amp;</span> <span class="keyword">\multicolumn</span>&#123;4&#125;&#123;|c&#125;&#123;Dbscan&#125; <span class="keyword">\\</span>  <span class="comment">% 4列融合，中间加杠</span></span><br><span class="line">    <span class="keyword">\hline</span> </span><br><span class="line">    cluster <span class="built_in">&amp;</span> mean <span class="built_in">&amp;</span> count <span class="built_in">&amp;</span> word example <span class="built_in">&amp;</span> cluster <span class="built_in">&amp;</span> mean <span class="built_in">&amp;</span> count <span class="built_in">&amp;</span> word example <span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\hline</span> </span><br><span class="line">    0 <span class="built_in">&amp;</span> 1.719 <span class="built_in">&amp;</span> 63 <span class="built_in">&amp;</span> cynic <span class="built_in">&amp;</span> <span class="keyword">\multirow</span>&#123;2&#125;*&#123;outlier&#125; <span class="built_in">&amp;</span> <span class="keyword">\multirow</span>&#123;2&#125;*&#123;1.385&#125; <span class="built_in">&amp;</span> <span class="keyword">\multirow</span>&#123;2&#125;*&#123;104&#125; <span class="built_in">&amp;</span> <span class="keyword">\multirow</span>&#123;2&#125;*&#123;could&#125;<span class="keyword">\\</span></span><br><span class="line">    1 <span class="built_in">&amp;</span> 1.307 <span class="built_in">&amp;</span> 59 <span class="built_in">&amp;</span> oxide  <span class="keyword">\\</span> </span><br><span class="line">    2 <span class="built_in">&amp;</span> 1.455 <span class="built_in">&amp;</span> 66 <span class="built_in">&amp;</span> panic <span class="built_in">&amp;</span> <span class="keyword">\multirow</span>&#123;2&#125;*&#123;0&#125;<span class="built_in">&amp;</span> <span class="keyword">\multirow</span>&#123;2&#125;*&#123;1.175&#125; <span class="built_in">&amp;</span> <span class="keyword">\multirow</span>&#123;2&#125;*&#123;86&#125; <span class="built_in">&amp;</span> <span class="keyword">\multirow</span>&#123;2&#125;*&#123;study&#125;<span class="keyword">\\</span> </span><br><span class="line">    3 <span class="built_in">&amp;</span> 1.064 <span class="built_in">&amp;</span> 87 <span class="built_in">&amp;</span> money<span class="keyword">\\</span> </span><br><span class="line">    4 <span class="built_in">&amp;</span> 1.95 <span class="built_in">&amp;</span> 84 <span class="built_in">&amp;</span> cramp <span class="built_in">&amp;</span> 1 <span class="built_in">&amp;</span> 1.974 <span class="built_in">&amp;</span> 169 <span class="built_in">&amp;</span> stead<span class="keyword">\\</span> </span><br><span class="line">    <span class="keyword">\bottomrule</span>[2pt]</span><br><span class="line">    <span class="keyword">\end</span>&#123;tabular&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;table&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>![[assets&#x2F;Pasted image 20240803003554.png]]<br>table 环境是一个将表格嵌入文本的浮动环境。tabular 环境的必选参数由每列对应<br>一个格式字符所组成：c 表示居中，l 表示左对齐，r 表示右对齐，其总个数应与表的列数<br>相同。此外，@{文本}可以出现在任意两个上述的列格式之间，其中的文本将被插入每一<br>行的同一位置。表格的各行以\分隔，同一行的各列则以 &amp; 分隔。\toprule 、\midrule<br>和 \bottomrule 三个命令是由 booktabs 宏包提供的，其中 \toprule 和 \bottomrule 分<br>别用来绘制表格的第一条（表格最顶部）和第三条（表格最底部）水平线，\midrule 用<br>来绘制第二条（表头之下）水平线，且第一条和第三条水平线的线宽为 1.5pt ，第二条<br>水平线的线宽为 1pt 。引用方法与图片的相同。</p>
+<h2 id="公式环境"><a href="#公式环境" class="headerlink" title="公式环境"></a>公式环境</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 行内公式</span></span><br><span class="line"><span class="built_in">$</span>f<span class="built_in">^</span>2<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="comment">% 单行编号</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;equation&#125; </span><br><span class="line">	1+2=3 </span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">% 单行不编号</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;equation*&#125; ...</span><br><span class="line"></span><br><span class="line"><span class="comment">% 单行不编号</span></span><br><span class="line"><span class="keyword">\[</span></span><br><span class="line">1+2</span><br><span class="line"><span class="keyword">\]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">% 多行各自编号，对齐</span></span><br><span class="line"><span class="keyword">\usepackage</span>&#123;amsmath&#125; </span><br><span class="line">... </span><br><span class="line"><span class="keyword">\begin</span>&#123;align&#125; </span><br><span class="line">	a <span class="built_in">&amp;</span> = b + c <span class="keyword">\\</span> </span><br><span class="line">	  <span class="built_in">&amp;</span> = y - z </span><br><span class="line"><span class="keyword">\end</span>&#123;align&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>![[assets&#x2F;Pasted image 20240726160143.png]]<br>![[assets&#x2F;Pasted image 20240726160131.png]]</p>
+<h4 id="公式引用："><a href="#公式引用：" class="headerlink" title="公式引用："></a>公式引用：</h4><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\eqref</span>&#123;ref&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h2><p>矩阵</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\[</span></span><br><span class="line"><span class="keyword">\mathbf</span>&#123;X&#125; = <span class="keyword">\left</span>(</span><br><span class="line">    <span class="keyword">\begin</span>&#123;array&#125;&#123;cccc&#125;</span><br><span class="line">    x<span class="built_in">_</span>&#123;11&#125; <span class="built_in">&amp;</span> x<span class="built_in">_</span>&#123;12&#125; <span class="built_in">&amp;</span> <span class="keyword">\ldots</span> <span class="built_in">&amp;</span> x<span class="built_in">_</span>&#123;1n&#125;<span class="keyword">\\</span></span><br><span class="line">    x<span class="built_in">_</span>&#123;21&#125; <span class="built_in">&amp;</span> x<span class="built_in">_</span>&#123;22&#125; <span class="built_in">&amp;</span> <span class="keyword">\ldots</span> <span class="built_in">&amp;</span> x<span class="built_in">_</span>&#123;2n&#125;<span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\vdots</span> <span class="built_in">&amp;</span> <span class="keyword">\vdots</span> <span class="built_in">&amp;</span> <span class="keyword">\ddots</span> <span class="built_in">&amp;</span> <span class="keyword">\vdots</span><span class="keyword">\\</span></span><br><span class="line">    x<span class="built_in">_</span>&#123;n1&#125; <span class="built_in">&amp;</span> x<span class="built_in">_</span>&#123;n2&#125; <span class="built_in">&amp;</span> <span class="keyword">\ldots</span> <span class="built_in">&amp;</span> x<span class="built_in">_</span>&#123;nn&#125;<span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\end</span>&#123;array&#125; <span class="keyword">\right</span>)</span><br><span class="line"><span class="keyword">\]</span></span><br></pre></td></tr></table></figure>
+
+<p>公式中个别需要加粗的字母可以用 <code>$\bm&#123;math symbol&#125;$</code></p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\cite</span>[p. 215]&#123;citationkey1, citationkey2, citationkey3&#125; <span class="comment">% 参考文献标注</span></span><br><span class="line"><span class="keyword">\nocite</span>&#123;citationkey&#125; <span class="comment">% 标记不引用的参考文献</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\bibliographystyle</span>&#123;plain&#125; </span><br><span class="line"><span class="keyword">\bibliography</span>&#123;references&#125;</span><br></pre></td></tr></table></figure>
+
+<p>LaTeX 包含了多种行内数字标号引用的格式：</p>
+<p><strong>Plain</strong> 方括号包裹数字的形式，如 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" title="[1]">。文献列表按照第一作者的字母表顺序排列。每一个作者的名字是全称。</p>
+<p><strong>Abbrv</strong> 与 <strong>plain</strong> 是相同的，但作者的名字是缩写。</p>
+<p><strong>Unsrt</strong> 与 <strong>plain</strong> 是相同的，但文献列表的排序按照在文中引用的先后顺序排列。</p>
+<p><strong>Alpha</strong> 与 <strong>plain</strong> 一样，但引用的标注是作者的名字与年份组合在一起，不是数字</p>
+<h2 id="定理环境等（国赛模板独有）"><a href="#定理环境等（国赛模板独有）" class="headerlink" title="定理环境等（国赛模板独有）"></a>定理环境等（国赛模板独有）</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;definition&#125;</span><br><span class="line">    定义环境</span><br><span class="line">    <span class="keyword">\label</span>&#123;def:nosense&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;definition&#125;</span><br><span class="line"><span class="keyword">\cref</span>&#123;def:nosense&#125;除了告诉你怎么使用这个环境以外，没有什么其它的意义。</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">除了 definition 环境，还可以使用 theorem 、lemma、corollary、assumption、conjecture、axiom、principle、problem、example、proof、solution 这些环境，根据论文的实际需求合理使用。 </span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;theorem&#125;</span><br><span class="line">    这是一个定理。</span><br><span class="line">    <span class="keyword">\label</span>&#123;thm:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;theorem&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;thm:example&#125;我们知道了定理环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;lemma&#125;</span><br><span class="line">    这是一个引理。</span><br><span class="line">    <span class="keyword">\label</span>&#123;lem:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;lemma&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;lem:example&#125;我们知道了引理环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;corollary&#125;</span><br><span class="line">    这是一个推论。</span><br><span class="line">    <span class="keyword">\label</span>&#123;cor:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;corollary&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;cor:example&#125;我们知道了推论环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;assumption&#125;</span><br><span class="line">    这是一个假设。</span><br><span class="line">    <span class="keyword">\label</span>&#123;asu:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;assumption&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;asu:example&#125;我们知道了假设环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;conjecture&#125;</span><br><span class="line">    这是一个猜想。</span><br><span class="line">    <span class="keyword">\label</span>&#123;con:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;conjecture&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;con:example&#125;我们知道了猜想环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;axiom&#125;</span><br><span class="line">    这是一个公理。</span><br><span class="line">    <span class="keyword">\label</span>&#123;axi:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;axiom&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;axi:example&#125;我们知道了公理环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;principle&#125;</span><br><span class="line">    这是一个定律。</span><br><span class="line">    <span class="keyword">\label</span>&#123;pri:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;principle&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;pri:example&#125;我们知道了定律环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;problem&#125;</span><br><span class="line">    这是一个问题。</span><br><span class="line">    <span class="keyword">\label</span>&#123;pro:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;problem&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;pro:example&#125;我们知道了问题环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;example&#125;</span><br><span class="line">    这是一个例子。</span><br><span class="line">    <span class="keyword">\label</span>&#123;exa:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;example&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;exa:example&#125;我们知道了例子环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;proof&#125;</span><br><span class="line">    这是一个证明。</span><br><span class="line">    <span class="keyword">\label</span>&#123;prf:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;proof&#125;</span><br><span class="line">由<span class="keyword">\cref</span>&#123;prf:example&#125;我们知道了证明环境的使用。</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;solution&#125;</span><br><span class="line">    这是一个解。</span><br><span class="line">    <span class="keyword">\label</span>&#123;sol:example&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;solution&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码附录"><a href="#代码附录" class="headerlink" title="代码附录"></a>代码附录</h2><figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\section</span>&#123;排队算法--matlab 源程序&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;lstlisting&#125;[language=matlab]</span><br><span class="line">kk=2;[mdd,ndd]=size(dd);</span><br><span class="line">while ~isempty(V)</span><br><span class="line">[tmpd,j]=min(W(i,V));tmpj=V(j);</span><br><span class="line">for k=2:ndd</span><br><span class="line">[tmp1,jj]=min(dd(1,k)+W(dd(2,k),V));</span><br><span class="line">tmp2=V(jj);tt(k-1,:)=[tmp1,tmp2,jj];</span><br><span class="line">end</span><br><span class="line">tmp=[tmpd,tmpj,j;tt];[tmp3,tmp4]=min(tmp(:,1));</span><br><span class="line">if tmp3==tmpd, ss(1:2,kk)=[i;tmp(tmp4,2)];</span><br><span class="line">else,tmp5=find(ss(:,tmp4)~=0);tmp6=length(tmp5);</span><br><span class="line">if dd(2,tmp4)==ss(tmp6,tmp4)</span><br><span class="line">ss(1:tmp6+1,kk)=[ss(tmp5,tmp4);tmp(tmp4,2)];</span><br><span class="line">else, ss(1:3,kk)=[i;dd(2,tmp4);tmp(tmp4,2)];</span><br><span class="line">end;end</span><br><span class="line">dd=[dd,[tmp3;tmp(tmp4,2)]];V(tmp(tmp4,3))=[];</span><br><span class="line">[mdd,ndd]=size(dd);kk=kk+1;</span><br><span class="line">end; S=ss; D=dd(1,:);</span><br><span class="line"> <span class="keyword">\end</span>&#123;lstlisting&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/08/25/LaTeX/" data-id="cm090zqoh0000pbwh74qlhzhp" data-title="LaTeX" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/08/25/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2024-08-25T02:40:29.182Z" itemprop="datePublished">2024-08-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/08/25/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/08/25/hello-world/" data-id="cm090zqol0001pbwh9yyl2wli" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/08/25/LaTeX/">LaTeX</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/25/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
